@@ -1,0 +1,170 @@
+@font-face
+ {
+	font-family:"BBVALight";
+	src:url("fonts/bbvaweb-light.eot?") format("embedded-opentype"),url("fonts/bbvaweb-light.woff") format("woff"),url("fonts/bbvaweb-light.ttf") format("opentype"),url("fonts/bbvaweb-light.svg") format("svg");
+	font-style:normal;
+	font-stretch:normal;
+ }
+
+@font-face
+ {
+	font-family:"BBVABook";
+	src:url("fonts/bbvaweb-book.eot?") format("embedded-opentype"),url("fonts/bbvaweb-book.woff") format("woff"),url("fonts/bbvaweb-book.ttf") format("opentype"),url("fonts/bbvaweb-book.svg") format("svg");
+	font-style:normal;
+	font-stretch:normal;
+ }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.accesos {
+	color: #71777f;
+}
+
+.accesos a {
+	color: #71777f;
+	text-decoration: none;
+}
+
+.accesos img {
+	width: 100%;
+}
+
+.accesos h2, .accesos p {
+	padding: 0 15px;
+}
+
+.accesos h2 {
+	font-size: 25px;
+}
+
+.accesos p {
+	line-height: 16px;
+	font-family: "BBVABook", "Arial", sans-serif;
+	margin-bottom: 50px;
+}
+
+b, strong {
+    font-weight: normal;
+    font-family: "BBVABook", "Arial", sans-serif;
+}
+
+.bajada-back {
+	width: 100%;
+	height: 60px;
+	background-color: #f8f8f8;
+	position: absolute;
+	top: 669px;
+	z-index: 0;
+}
+
+.banner {
+	width: 100%;
+	height: 240px;
+	background-color: #006ec1;
+	text-align: center;
+	padding-top: 140px;
+	margin-top: 20px;
+}
+
+.banner-back {
+	width: 100%;
+	height: 240px;
+	background-color: #006ec1;
+	position: absolute;
+	top: 96px;
+	z-index: 0;
+}
+
+.banner-error {
+	background-color: #c8175e;
+}
+
+body {
+    font-family: "BBVALight", "Arial", sans-serif;
+    color: #006ec1;
+ }
+
+.contenedor {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.error, .success {
+	color: #71777f;
+	font-size:22px;
+}
+
+.error b {
+	color: #006ec1;
+}
+
+.error .bajada {
+	background-color: #f8f8f8;
+	font-size: 21px;
+	padding: 15px 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.error p, .success p {
+	padding: 0 30px;
+}
+
+h1 {
+	font-size: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+	color: #006ec1;
+	margin: 40px 0;
+}
+
+.mensaje {
+	margin-top: 50px;
+	margin-bottom: 65px;
+}
+
+.sombra {
+	width: 80%;
+	height: 41px;
+	background-image: url("../img/sombra.png");
+	background-repeat: repeat-x;
+	margin: 10px auto;
+	position: relative;
+}
+
+.sombra::before, .sombra::after {
+	content: "";
+	position: absolute;
+	width: 81px;
+	height: 41px;
+	background-repeat: no-repeat;
+}
+
+.sombra::before {	
+	left: 0px;
+	background-image: url("../img/sombra-i.png");
+}
+
+.sombra::after {
+	right: 0;
+	background-image: url("../img/sombra-f.png");
+}
+
+@media only screen and (max-width: 479px) {
+	.accesos .col-xs-12 {
+		padding: 0 10.44%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.accesos .col-xs-12 {
+		padding: 0 100px;
+	}
+}
